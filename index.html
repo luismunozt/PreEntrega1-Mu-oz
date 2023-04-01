@@ -4,66 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="velas, mexicana, regalos, decoracion">
+    <meta name="description" content="Fabricacion de velas mexicanas con excelente calidad">    
     <title>Narciso HandMade</title> 
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="shortcut icon" href="./images/LOGO IG.jpg" type="image/x-icon">
-
+    <link rel="stylesheet" href="./sass/mainscss.css">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <!-- utilzar bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-
-  <div id="grid-area">
-    <header id="header">
-      <div class="logo">
-          <p>
-            <a href="./index.html">
-              <img src="./images/LOGO IG.jpg" alt="Narciso.Logo"></a></p>
+<!-- Menu provisional, requiere mejoras en colores -->
+  <nav id="menu" class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/logo.jpg" alt="logo" width="200px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/accesorios-de-concreto.html">Accesorios de Concreto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/coleccion-decorativa.html">Colecciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/edicion-de-temporada.html">Temporada</a>
+          <li class="nav-item">
+             <a class="nav-link" href="./pages/carrito-de-compra.html">Compras</a>
+          </li>
+        </ul>
       </div>
-  
-      <nav class="menu">
-          <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./pages/edicion-de-temporada.html">Edicion de temporada</a></li>
-              <li><a href="./pages/coleccion-decorativa.html">Coleccion decorativa</a></li>
-              <li><a href="./pages/accesorios-de-concreto.html">Accesorios de concreto</a></li>
-              <li><a href="./pages/carrito-de-compra.html">Carrito de compra</a></li>
-          </ul>
-      </nav>
-    </header>  
+    </div>
+  </nav>
   
     <main id="main">
-      <h1 class="tit-principal">Handmade</h1>
-      <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias ex distinctio iste reiciendis Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla facilis esse commodi reprehenderit expedita, animi, obcaecati numquam, recusandae illum sed praesentium officiis sunt in quos nesciunt velit aperiam dolore?</p>
+      <h1 class="tit-principal">Marca Mexicana</h1>
+      <p class="main-text">NARCISO
+        Marca mexicana. Handmade.
+        🌈 Trendy / Classic jewelry
+        🕯 Candles
+        📍Pedidos y envio a toda la republica / Entregas personales en Guadalajara, Jalisco.</p>
     </main>
     <section id="us">
       <!-- imagen bloque de parrafo y formulario o mapa o video -->
       <iframe class="video" width="80%" height="auto" src="https://www.youtube.com/embed/FzPE9iqZviI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-      <div class="la-empresa">
-          <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum!
+      <div class="container">
+        <div class="row">
+          <h2 class="col-md-4 col-sm-6">
+            El negocio de la fabricación de velas es una práctica arcaica, repleta de anécdotas que relatan la magnífica trayectoria y la incesante permanencia de este arte en la historia global.
           </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, iure.</p>
-        
+        </div>
       </div>
-      <div class="gif" width="80%" height="auto" >
-        <img class="velas" src="./images/COLORAMA-SLIDER-2-1500x1870px_2_600x (1).webp" alt="Velas">
-      </div>
-    </section>
-  
-    <section id="contacto">
-      <div>
-          <h3>
-              Newsletter
-          </h3>
-          <form action="nombre">
-              <label for="nombre">Nombre</label>
-              <input type="text" name="nombre" placeholder="Nombre">
-  
-              <label for="correo">Correo</label>
-              <input type="email" name="correo" placeholder="Mail">  
-              <input type="submit">
-  
-          </form>
+      <div class="row">
+        <img class="col-md-4 col-lg-6 text-align" src="./images/pp4.jpg" alt="Velas">
+        <p>Decora tus espacios con una de nuestras velas favoritas. Recuerda que puedes personalizar el color 😍</p>
       </div>
     </section>
     
@@ -71,10 +72,26 @@
       <div>
         &copy;2022, Narciso HandMade.
       </div>
-      
+      <section id="contacto">
+        <div>
+            <h3>
+                Newsletter
+            </h3>
+            <form action="nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" placeholder="Mail">  
+                <input id="boton" type="submit">
+    
+            </form>
+        </div>
+      </section>
     </footer>
   </div>
-
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 </html>
